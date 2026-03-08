@@ -1,2 +1,68 @@
-# birthday-surprise
-A birthday surprise website for my best friend
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Best Friend</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+background: linear-gradient(120deg,#ff9a9e,#fad0c4);
+color:white;
+overflow:hidden;
+}
+
+h1{
+font-size:60px;
+margin-top:120px;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px white;}
+to{ text-shadow:0 0 30px yellow;}
+}
+
+p{
+font-size:25px;
+}
+
+button{
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background:white;
+color:#ff4081;
+}
+
+#message{
+margin-top:30px;
+font-size:28px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<p>This website is made only for you 💖</p>
+
+<button onclick="surprise()">Click for Surprise</button>
+
+<div id="message"></div>
+
+<script>
+function surprise(){
+document.getElementById("message").innerHTML =
+"Thank you for being the best friend in my life. I hope this year brings you happiness, success, and unforgettable memories 💕";
+}
+</script>
+
+</body>
+</html>
